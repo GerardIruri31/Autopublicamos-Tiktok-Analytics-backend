@@ -1,0 +1,102 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  max-width: 100%; /* 📌 Se adapta al 100% del ancho disponible */
+  min-width: 1200px; /* 📌 Evita que el contenido se vuelva demasiado pequeño */
+  overflow-y: auto;
+  background-color: linear-gradient(135deg, #4a00e0, #8e2de2);
+  color: white;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 20px;
+  background: none; /* Elimina cualquier fondo */
+  padding: 0;
+}
+
+.login-header h1 {
+  font-size: 2.7rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff; /* Texto blanco */
+}
+
+.login-header p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ffffff; /* Texto blanco */
+}
+
+.login-form {
+  width: 90%;
+  max-width: 600px; /* Mantén el formulario con un ancho máximo razonable */
+  background: white; /* Fondo blanco para destacar */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Sombra para resaltar */
+  text-align: center;
+}
+
+.form-group input {
+  width: 90%;
+  padding: 10px;
+  min-height: 45px;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.login-button {
+  background-color: #4a00e0;
+  color: white;
+  border: none;
+  padding: 12px; /* Aumenta el tamaño del botón */
+  width: 90%;
+  border-radius: 6px;
+  font-size: 18px; /* Fuente más grande */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #3a0072;
+}
+
+.login-footer {
+  margin-top: 16px;
+  font-size: 20px;
+}
+
+.login-footer a {
+  color: #d4af37;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Login.css */
+.input-field {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  color: #333; /* Color del texto */
+  background-color: white; /* Fondo blanco */
+}
+
+.input-label {
+  display: block; /* Asegura que sea visible */
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px; /* Espaciado entre el texto y el input */
+  color: #333; /* Color del texto */
+}

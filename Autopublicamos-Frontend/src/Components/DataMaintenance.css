@@ -1,0 +1,204 @@
+.data-maintenance-container {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  width: 1500px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: auto;
+  overflow: hidden;
+}
+
+.maintenance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4a80d6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.return-button {
+  background-color: white;
+  color: #4a80d6;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.return-button:hover {
+  background-color: #f0f0f0;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.1s ease,
+    box-shadow 0.2s ease, border-color 0.2s ease;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-button:hover {
+  background-color: #0056b3;
+}
+
+.filter-button:active {
+  background-color: #004494;
+  transform: scale(0.95);
+}
+
+/* Tabla de resultados */
+.results-table-container1 {
+  margin-top: 2px;
+  width: 100%;
+  overflow: hidden;
+  min-height: auto; /* Ajusta la altura mínima para evitar que la tabla sea muy pequeña */
+}
+
+.results-table1 {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.results-table1 th,
+.results-table1 td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.results-table1 th {
+  background-color: #4a80d6;
+  color: white;
+  font-weight: bold;
+}
+
+.no-data-container1 {
+  text-align: center;
+  width: 100%;
+  padding: 50px 0;
+  background-color: white;
+  min-height: 320px;
+}
+
+.no-data-row1 {
+  min-height: 320px;
+}
+
+.no-data-container1 .table {
+  min-height: 320px;
+}
+
+.no-data-container1 h2 {
+  margin-top: 100px;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.no-data-container1 p {
+  padding: 0;
+  font-size: 22px;
+}
+
+.log-container2 {
+  margin: 25px auto; /* Centra horizontalmente */
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 97%; /* Ajusta el ancho para que coincida con otros divs */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centrar el texto */
+  overflow: hidden; /* Evita que el contenido se salga */
+}
+
+.log-container2 h1 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.no-data-container2 {
+  text-align: center;
+  color: black;
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.no-data-container2 p {
+  font-size: 18px;
+}
+
+.export-import-container1 {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Botón Exportar a Excel */
+.export-dbquery-button1 {
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 12px 20px; /* Aumenta tamaño uniforme */
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.1s;
+  font-size: 14px;
+  margin-top: 0;
+  text-align: center;
+  min-width: 150px; /* Mantiene el mismo ancho */
+}
+
+.export-dbquery-button1:hover {
+  background-color: #449d44;
+}
+
+.import-excel-button1 {
+  background-color: #0275d8;
+  color: white;
+  border: none;
+  padding: 12px 20px; /* Aumenta tamaño uniforme */
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.1s;
+  font-size: 14px;
+  margin-top: 0;
+  text-align: center;
+  min-width: 115px; /* Mantiene el mismo ancho */
+}
+
+.import-excel-button1:hover {
+  background-color: #025aa5;
+}

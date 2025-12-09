@@ -1,0 +1,332 @@
+/* DataBaseQueries.css */
+
+/* Contenedor principal */
+.dbqueries-container {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 1200px; /* 📌 Evita que el contenido se vuelva demasiado pequeño */
+  max-width: 100%; /* 📌 Se adapta al 100% del ancho disponible */
+}
+
+/* Encabezado */
+.dbqueries-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4a80d6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  min-height: 60px;
+}
+
+.return-button {
+  background-color: white;
+  color: #4a80d6;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.return-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Sección de filtros */
+.dbqueries-filters {
+  gap: 20px;
+  margin: 20px 0;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 90%;
+}
+
+.date-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.date-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.date-range-container {
+  display: flex;
+  gap: 10px;
+}
+
+.date-range-container input[type="date"] {
+  flex: 1;
+  min-width: 150px;
+}
+
+.filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-section label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.filter-group textarea {
+  resize: none;
+  overflow-y: scroll;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.date-section label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.date-section input[type="date"],
+.filter-section input[type="text"],
+.filter-section input[type="number"] {
+  width: 100%;
+  height: 30px;
+  padding: 3px;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Rango de vistas */
+.views-range {
+  display: flex;
+  gap: 5px;
+}
+
+.likes-range {
+  display: flex;
+  gap: 5px;
+}
+
+.saves-range {
+  display: flex;
+  gap: 5px;
+}
+
+.engagement-range {
+  display: flex;
+  gap: 5px;
+}
+.interactions-range {
+  display: flex;
+  gap: 5px;
+}
+/* Botón para iniciar la consulta */
+.dbquery-button {
+  align-self: center;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+
+  height: 40px;
+  width: auto;
+  min-width: 150px;
+  text-align: center;
+}
+
+.dbquery-button:hover {
+  background-color: #c9302c;
+}
+
+.dbquery-buttons-group {
+  display: flex;
+  justify-content: center; /* <-- Centra los botones */
+  gap: 12px;
+  margin-top: 16px;
+}
+
+/* Contenedor de resultados */
+.dbqueries-results {
+  margin-right: auto; /* Centra horizontalmente */
+  margin-left: auto; /* Centra horizontalmente */
+  margin-top: 10px;
+  margin-bottom: 22px;
+
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 97%; /* Ajusta el ancho para que coincida con otros divs */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centrar el texto */
+  overflow: hidden; /* Evita que el contenido se salga */
+}
+
+.dbqueries-results h1 {
+  margin-top: 15px;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+/* Mensaje de No Data Found / Loading */
+
+.no-data-container51 {
+  text-align: center;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.no-data-container51 h2 {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.no-data-container51 p {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 55px;
+}
+
+.no-data-container5 {
+  text-align: center;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.no-data-container5 h2 {
+  text-align: center;
+  margin-top: 38px;
+  margin-bottom: 5px;
+}
+
+.no-data-container5 p {
+  text-align: center;
+  font-size: 17px;
+  margin-top: 20px;
+  margin-bottom: 55px;
+}
+
+.no-data-row5 {
+  display: flex; /* Alinea los bloques en fila */
+  justify-content: space-between; /* Espacia los bloques uniformemente */
+  width: 100%;
+  height: 100%;
+}
+
+.loading-spinner {
+  width: 141px;
+  height: 141px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.no-data-container51 img {
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+/* Contenedor del log para organizar en dos columnas */
+.log-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 15px; /* Espacio entre elementos */
+  padding: 10px;
+  justify-content: center; /* Centrar dentro del contenedor */
+  align-items: center;
+  margin: auto; /* Centra el grid en su contenedor */
+  width: 86%;
+}
+
+/* Estilo de cada línea del log */
+.log-content p {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el texto dentro del cuadro */
+  gap: 5px;
+  min-width: 200px; /* Evita que los elementos sean demasiado pequeños */
+}
+
+/* Tabla de resultados */
+.results-table-container {
+  width: 100%;
+  overflow-x: auto; /* 📌 Hace que la tabla sea desplazable en pantallas pequeñas */
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.results-table th,
+.results-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.results-table th {
+  background-color: #4a80d6;
+  color: white;
+  font-weight: bold;
+}
+
+/* Botón Exportar a Excel */
+.export-dbquery-button {
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-top: 21px;
+  margin-bottom: 5px;
+  width: auto;
+  min-width: 150px;
+  text-align: center;
+}
+
+.export-dbquery-button:hover {
+  background-color: #449d44;
+}

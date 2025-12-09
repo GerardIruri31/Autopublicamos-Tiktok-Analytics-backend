@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  background: linear-gradient(
+    135deg,
+    #4a86e8,
+    #285e94
+  ); /* Fondo azul-púrpura */
+
+  overflow-x: hidden; /* Evita cualquier scroll */
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

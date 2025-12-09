@@ -1,0 +1,307 @@
+/* TikTokAPICall.css */
+
+.tiktok-api-call-container {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  width: 1500px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: auto;
+  max-width: 100%; /* 📌 Se adapta al 100% del ancho disponible */
+  min-width: 1200px; /* 📌 Evita que el contenido se vuelva demasiado pequeño */
+}
+
+.tiktok-api-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4a80d6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.return-button {
+  background-color: white;
+  color: #4a80d6;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.return-button:hover {
+  background-color: #f0f0f0;
+}
+
+.filters-log-container {
+  display: flex; /* Habilita flexbox para alineación horizontal */
+  justify-content: space-between; /* Separa los elementos */
+  gap: 0;
+  margin: 20px 30px;
+}
+
+.filters-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 300px; /* 📌 Evita que los filtros se reduzcan demasiado */
+  margin-right: 60px;
+}
+
+.filters-container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-bottom: 2px;
+}
+
+.filters-container input[type="date"],
+.filters-container textarea {
+  width: 99%;
+  height: 30px;
+  padding: 3px;
+  font-size: 14px;
+  border-radius: 5px;
+  resize: none;
+}
+
+.filters-container textarea {
+  height: 90px; /* Altura fija */
+  resize: none; /* Evita que el usuario pueda redimensionar */
+  overflow-y: scroll; /* Habilita el scroll vertical */
+}
+
+.api-request-button {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  width: fit-content;
+  align-self: center;
+}
+
+.api-request-button:hover {
+  background-color: #c9302c;
+}
+
+.no-data-container {
+  text-align: center;
+  padding: 50px;
+  padding-bottom: 75px;
+  font-size: 24px;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  width: 80%;
+}
+
+.no-data-container p {
+  margin-top: 8px;
+  margin-bottom: 1px;
+  font-size: 13.5px;
+  color: black;
+}
+
+.log-container {
+  height: 100%;
+  margin-right: 65px;
+  width: 399px; /* Ancho mínimo para que los textos sean legibles */
+}
+
+.log-container h3 {
+  margin-right: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 28.2px; /* Ajusta el valor según necesites */
+}
+
+.no-data-container {
+  display: flex; /* Activa flexbox */
+  text-align: center; /* Asegura que el texto esté alineado al centro */
+  flex-direction: column; /* Organiza los elementos en columna */
+  justify-content: center; /* Centra verticalmente */
+  font-size: 14px;
+  width: 90%;
+  font-size: 18px;
+  padding-bottom: 75px;
+  margin: 0 auto;
+  height: 140px;
+}
+
+.no-data-row {
+  display: flex; /* Alinea los bloques en fila */
+  justify-content: space-between; /* Espacia los bloques uniformemente */
+  width: 100%;
+}
+
+.no-data-placeholder {
+  padding: 0;
+  border: none; /* Elimina bordes internos */
+  vertical-align: middle;
+}
+
+.no-data-container.table {
+  flex: 1; /* Hace que todos los bloques tengan el mismo tamaño */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 19px;
+  color: black;
+  background-color: white;
+  box-shadow: none; /* Elimina sombras para fusionar los bloques */
+  border-radius: 0;
+  border-right: none; /* Elimina separación entre bloques */
+}
+
+.loading-spinner {
+  width: 141px;
+  height: 135px;
+  display: block;
+  margin: 10px auto;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.table {
+  width: 92.1%;
+  margin: 0;
+}
+
+/*
+.image-container {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 1000px; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+*/
+
+/*
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+}
+*/
+
+.date-filter,
+.username-filter {
+  margin-bottom: 20px;
+}
+
+.results-container {
+  overflow-x: auto;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 100%;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  white-space: nowrap; /* Evita que las celdas se rompan en varias líneas */
+  min-height: 300px; /* 📌 Evita que la tabla se colapse en altura */
+}
+
+.results-table {
+  min-width: 100%; /* Asegura que no sea más pequeña que el contenedor */
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  width: 100%; /* 📌 Se adapta al 100% del contenedor */
+}
+
+.results-table th,
+.results-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  white-space: nowrap; /* Mantiene el texto en una sola línea */
+}
+
+.results-table th {
+  background-color: #4a80d6;
+  color: white;
+  font-weight: bold;
+}
+
+.results-table-container {
+  overflow-x: auto; /* Habilita scroll horizontal */
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 10px; /* Evita que el scroll tape contenido */
+}
+
+.export-button {
+  margin-top: 20px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.export-button:hover {
+  background-color: #449d44;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loading-spinner-container img {
+  width: 201px;
+  height: 201px;
+}
+
+.loading-spinner-container p {
+  margin-top: 20px;
+  color: white;
+  font-size: 21px;
+  font-family: "Helvetica", sans-serif;
+}
