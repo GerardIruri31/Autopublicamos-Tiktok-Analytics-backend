@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="Console"
+              class="ch.qos.logback.core.ConsoleAppender">
+<!--        <layout class="ch.qos.logback.classic.PatternLayout">-->
+        <encoder>
+            <Pattern>
+                %d %-5p [%X{sessionId}] [%X{userId}] %C{1}.%M:%L] %m%n
+            </Pattern>
+        </encoder>
+<!--        </layout>-->
+    </appender>
+
+<!--    <appender name="file" class="ch.qos.logback.core.FileAppender">-->
+<!--        <file>/var/tmp/application.log</file>-->
+<!--        <encoder>-->
+<!--            <pattern>%d %-5p [%X{sessionId}] [%X{userId}] %C{1}.%M:%L] %m%n</pattern>-->
+<!--        </encoder>-->
+<!--    </appender>-->
+
+    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+<!--        <file>/var/tmp/application.log</file>-->
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- Genera archivos de log con la fecha en el nombre -->
+            <fileNamePattern>/var/tmp/app-log-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!-- Conserva logs de los últimos 30 días -->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d %-5p [%X{sessionId}] [%X{userId}] %C{1}.%M:%L] %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="Console"/>
+        <appender-ref ref="file"/>
+    </root>
+</configuration>
